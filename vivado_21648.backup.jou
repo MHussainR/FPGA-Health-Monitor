@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jan  6 11:46:14 2023
+# Process ID: 21648
+# Current directory: C:/Users/Tajdar/Downloads/paper/fpga_paper
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4504 C:\Users\Tajdar\Downloads\paper\fpga_paper\fpga_paper.xpr
+# Log file: C:/Users/Tajdar/Downloads/paper/fpga_paper/vivado.log
+# Journal file: C:/Users/Tajdar/Downloads/paper/fpga_paper\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Tajdar/Downloads/paper/fpga_paper/fpga_paper.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Tajdar/Downloads/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tajdar/Downloads/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tajdar/Downloads/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run impl_1
+startgroup
+set_property package_pin "" [get_ports [list  {rgb[0]}]]
+place_ports {rgb[11]} G19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {rgb[1]}]]
+place_ports {rgb[10]} H19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {rgb[2]}]]
+place_ports {rgb[9]} J19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {rgb[3]}]]
+place_ports {rgb[8]} N19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {rgb[4]}]]
+place_ports {rgb[7]} J17
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {rgb[5]}]]
+place_ports {rgb[6]} H17
+endgroup
+place_ports {rgb[5]} G17
+place_ports {rgb[4]} N18
+place_ports {rgb[3]} L18
+place_ports {rgb[0]} J18
+place_ports {rgb[1]} K18
+startgroup
+set_property package_pin "" [get_ports [list  {rgb[3]}]]
+place_ports {rgb[2]} L18
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {rgb[4]}]]
+place_ports {rgb[3]} N18
+endgroup
+place_ports {rgb[4]} D17
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tajdar/Downloads/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tajdar/Downloads/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tajdar/Downloads/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tajdar/Downloads/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
