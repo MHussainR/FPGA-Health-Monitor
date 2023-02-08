@@ -2,116 +2,53 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Feb  2 15:58:56 2023
-# Process ID: 10596
-# Current directory: D:/vela/paper/fpga_paper
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2908 D:\vela\paper\fpga_paper\fpga_paper.xpr
-# Log file: D:/vela/paper/fpga_paper/vivado.log
-# Journal file: D:/vela/paper/fpga_paper\vivado.jou
+# Start of session at: Wed Feb  8 08:39:40 2023
+# Process ID: 20096
+# Current directory: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2872 D:\OneDrive - Habib University\GitHub reps\FPGA-Health-Monitor\fpga_paper.xpr
+# Log file: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/vivado.log
+# Journal file: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/vela/paper/fpga_paper/fpga_paper.xpr
+open_project {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.xpr}
 update_compile_order -fileset sources_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+add_files -norecurse {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mainpage.hex.v} {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lastpage.hex.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+read_checkpoint-help
+read_checkpoint
+read_checkpoint c
+read_checkpoint top.dcp
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+export_ip_user_files -of_objects  [get_files {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mainpage.hex.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mainpage.hex.v}}
+export_ip_user_files -of_objects  [get_files {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lastpage.hex.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lastpage.hex.v}}
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

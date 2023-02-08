@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1'
+HD_PWD='D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

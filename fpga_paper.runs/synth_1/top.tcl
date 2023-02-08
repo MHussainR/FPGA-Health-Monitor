@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.tcl"
+  variable script "D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,34 +71,33 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 1
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/vela/paper/fpga_paper/fpga_paper.cache/wt [current_project]
-set_property parent.project_path D:/vela/paper/fpga_paper/fpga_paper.xpr [current_project]
+set_property webtalk.parent_dir {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.cache/wt} [current_project]
+set_property parent.project_path {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/vela/paper/fpga_paper/fpga_paper.cache/ip [current_project]
+set_property ip_output_repo {d:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/ascii_rom.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/ascii_test_1.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/bcd_2_hex.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/binary_2_bcd.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/clk_div.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/flipflop.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/lsfr.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/mux.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/pixel_generation.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/score_count.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/vga_controller.v
-  D:/vela/paper/fpga_paper/fpga_paper.srcs/sources_1/new/top_level.v
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/ascii_rom.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/ascii_test_1.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/bcd_2_hex.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/binary_2_bcd.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/clk_div.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/flipflop.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lsfr.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mux.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/pixel_generation.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/score_count.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/vga_controller.v}
+  {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/top_level.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -109,12 +108,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/vela/paper/fpga_paper/fpga_paper.srcs/constrs_1/new/main_const.xdc
-set_property used_in_implementation false [get_files D:/vela/paper/fpga_paper/fpga_paper.srcs/constrs_1/new/main_const.xdc]
+read_xdc {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/constrs_1/new/main_const.xdc}}
+set_property used_in_implementation false [get_files {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/constrs_1/new/main_const.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp
+read_checkpoint -auto_incremental -incremental D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

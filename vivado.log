@@ -2,254 +2,93 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Feb  2 15:58:56 2023
-# Process ID: 10596
-# Current directory: D:/vela/paper/fpga_paper
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2908 D:\vela\paper\fpga_paper\fpga_paper.xpr
-# Log file: D:/vela/paper/fpga_paper/vivado.log
-# Journal file: D:/vela/paper/fpga_paper\vivado.jou
+# Start of session at: Wed Feb  8 08:39:40 2023
+# Process ID: 20096
+# Current directory: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2872 D:\OneDrive - Habib University\GitHub reps\FPGA-Health-Monitor\fpga_paper.xpr
+# Log file: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/vivado.log
+# Journal file: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/vela/paper/fpga_paper/fpga_paper.xpr
+open_project {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/vela/paper/fpga_paper' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
-open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 1016.961 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 1028.141 ; gain = 0.000
 update_compile_order -fileset sources_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2020.1
-  **** Build date : May 27 2020 at 20:24:38
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-****** Xilinx cs_server v2020.1.0
-  **** Build date : May 14 2020-06:10:29
-    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1016.961 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A4FA
-open_hw_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2186.820 ; gain = 1169.859
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+add_files -norecurse {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mainpage.hex.v} {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lastpage.hex.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
 reset_run synth_1
-INFO: [filemgmt 20-762] Replacing file 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp' with file 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp'.
-INFO: [filemgmt 20-1080] Importing file from 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp' to 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp'.
+INFO: [Project 1-954] Importing D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/top.dcp file to utils Fileset.
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Feb  2 16:06:09 2023] Launched synth_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/runme.log
-[Thu Feb  2 16:06:09 2023] Launched impl_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+[Wed Feb  8 08:50:39 2023] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log
+[Wed Feb  8 08:50:39 2023] Launched impl_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log
 reset_run synth_1
-INFO: [filemgmt 20-762] Replacing file 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp' with file 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp'.
-INFO: [filemgmt 20-1080] Importing file from 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp' to 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp'.
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Feb  2 16:12:49 2023] Launched synth_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/runme.log
-[Thu Feb  2 16:12:49 2023] Launched impl_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+[Wed Feb  8 08:56:23 2023] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log
+[Wed Feb  8 08:56:23 2023] Launched impl_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log
+read_checkpoint-help
+invalid command name "read_checkpoint-help"
+read_checkpoint
+Command: read_checkpoint
+ERROR: [Common 17-161] Invalid option value '' specified for '-file'.
+read_checkpoint c
+Command: read_checkpoint c
+ERROR: [Common 17-69] Command failed: File 'D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/c' does not exist
+read_checkpoint top.dcp
+Command: read_checkpoint top.dcp
+ERROR: [Common 17-69] Command failed: File 'D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/top.dcp' does not exist
 reset_run synth_1
-INFO: [filemgmt 20-762] Replacing file 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp' with file 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp'.
-INFO: [filemgmt 20-1080] Importing file from 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp' to 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp'.
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Feb  2 16:21:11 2023] Launched synth_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/runme.log
-[Thu Feb  2 16:21:11 2023] Launched impl_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2A4FA
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A4FA
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+[Wed Feb  8 09:01:47 2023] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log
+[Wed Feb  8 09:01:47 2023] Launched impl_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log
 reset_run synth_1
-INFO: [filemgmt 20-762] Replacing file 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp' with file 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp'.
-INFO: [filemgmt 20-1080] Importing file from 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp' to 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp'.
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Feb  2 16:30:34 2023] Launched synth_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/runme.log
-[Thu Feb  2 16:30:34 2023] Launched impl_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_runs synth_1 -jobs 2
+[Wed Feb  8 09:07:01 2023] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
 reset_run synth_1
-INFO: [filemgmt 20-762] Replacing file 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp' with file 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp'.
-INFO: [filemgmt 20-1080] Importing file from 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp' to 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp'.
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Feb  2 16:37:18 2023] Launched synth_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/runme.log
-[Thu Feb  2 16:37:18 2023] Launched impl_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+[Wed Feb  8 09:44:24 2023] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log
+[Wed Feb  8 09:44:24 2023] Launched impl_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
 reset_run synth_1
-INFO: [filemgmt 20-762] Replacing file 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp' with file 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp'.
-INFO: [filemgmt 20-1080] Importing file from 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp' to 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp'.
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Feb  2 16:48:53 2023] Launched synth_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/runme.log
-[Thu Feb  2 16:48:53 2023] Launched impl_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+[Wed Feb  8 09:45:28 2023] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log
+[Wed Feb  8 09:45:29 2023] Launched impl_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log
 reset_run synth_1
-INFO: [filemgmt 20-762] Replacing file 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp' with file 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp'.
-INFO: [filemgmt 20-1080] Importing file from 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp' to 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp'.
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Feb  2 16:55:35 2023] Launched synth_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/runme.log
-[Thu Feb  2 16:55:35 2023] Launched impl_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2A4FA
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A4FA
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+[Wed Feb  8 09:47:04 2023] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log
+[Wed Feb  8 09:47:04 2023] Launched impl_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log
 reset_run synth_1
-INFO: [filemgmt 20-762] Replacing file 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp' with file 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp'.
-INFO: [filemgmt 20-1080] Importing file from 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp' to 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp'.
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Feb  2 17:17:15 2023] Launched synth_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/runme.log
-[Thu Feb  2 17:17:15 2023] Launched impl_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+[Wed Feb  8 09:48:36 2023] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log
+[Wed Feb  8 09:48:36 2023] Launched impl_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mainpage.hex.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mainpage.hex.v}}
+export_ip_user_files -of_objects  [get_files {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lastpage.hex.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lastpage.hex.v}}
 reset_run synth_1
-INFO: [filemgmt 20-762] Replacing file 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp' with file 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp'.
-INFO: [filemgmt 20-1080] Importing file from 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp' to 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp'.
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Feb  2 17:22:31 2023] Launched synth_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/runme.log
-[Thu Feb  2 17:22:31 2023] Launched impl_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-close_hw_manager
-reset_run synth_1
-INFO: [filemgmt 20-762] Replacing file 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp' with file 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp'.
-INFO: [filemgmt 20-1080] Importing file from 'D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/top.dcp' to 'D:/vela/paper/fpga_paper/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp'.
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Feb  2 17:34:20 2023] Launched synth_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/synth_1/runme.log
-[Thu Feb  2 17:34:20 2023] Launched impl_1...
-Run output will be captured here: D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2020.1
-  **** Build date : May 27 2020 at 20:24:38
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-****** Xilinx cs_server v2020.1.0
-  **** Build date : May 14 2020-06:10:29
-    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2268.766 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A4FA
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/vela/paper/fpga_paper/fpga_paper.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2A4FA
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Feb  2 19:15:33 2023...
+[Wed Feb  8 09:49:58 2023] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log
+[Wed Feb  8 09:49:58 2023] Launched impl_1...
+Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log

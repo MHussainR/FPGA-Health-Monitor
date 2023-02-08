@@ -1,0 +1,790 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 20096
+License: Customer
+
+Current time: 	Wed Feb 08 08:40:03 PKT 2023
+Time zone: 	Pakistan Standard Time (Asia/Karachi)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x900
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Tajdar
+User home directory: C:/Users/92331
+User working directory: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/92331/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/92331/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/92331/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/vivado.log
+Vivado journal file location: 	D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/vivado.jou
+Engine tmp dir: 	D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/.Xil/Vivado-20096-Tajdar
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,015 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: D:\OneDrive - Habib University\GitHub reps\FPGA-Health-Monitor\fpga_paper.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/vela/paper/fpga_paper' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 49 MB. Current time: 2/8/23, 8:40:04 AM PKT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 62 MB (+62246kb) [00:00:21]
+// [Engine Memory]: 1,015 MB (+913091kb) [00:00:21]
+// [GUI Memory]: 80 MB (+16050kb) [00:00:23]
+// [GUI Memory]: 102 MB (+18840kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  4267 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1511 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  2105 ms.
+// Project name: fpga_paper; location: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 1028.141 ; gain = 0.000 
+dismissDialog("Open Project"); // bz (cs)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3728 ms. Increasing delay to 3000 ms.
+// WARNING: updateGUI() is taking  1952 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2040 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2875 ms. Increasing delay to 4000 ms.
+// [GUI Memory]: 117 MB (+10449kb) [00:00:45]
+// Elapsed time: 25 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (F, cs) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_level.v)]", 1); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_level.v)]", 1); // B (F, cs)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1980 ms. Increasing delay to 5940 ms.
+// Elapsed time: 89 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 5); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 5); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top (top_level.v)]", 6); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (F, cs)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 386ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 105 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_level.v)]", 1); // B (F, cs)
+// Elapsed time: 52 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 24 seconds
+String[] filenames31467 = {"D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lastpage.hex.v", "D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mainpage.hex.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 32 seconds
+dismissDialog("Add Sources"); // c (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mainpage.hex.v} {D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lastpage.hex.v}} 
+// [GUI Memory]: 129 MB (+6622kb) [00:06:02]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 139 MB (+2831kb) [00:06:21]
+// PAPropertyPanels.initPanels (pixel_generation.v) elapsed time: 0.2s
+// Elapsed time: 90 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_level.v), pg : pixel_generation (pixel_generation.v)]", 4, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_level.v), pg : pixel_generation (pixel_generation.v), l1 : lfsr (lsfr.v)]", 5, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("pixel_generation.v", 572, 74); // bP (w, cs)
+typeControlKey((HResource) null, "pixel_generation.v", 'v'); // bP (w, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  2478 ms.
+selectCodeEditor("pixel_generation.v", 55, 115); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 166, 108); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 166, 128); // bP (w, cs)
+// Elapsed time: 27 seconds
+selectCodeEditor("pixel_generation.v", 111, 107); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 370, 142); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 387, 169); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("pixel_generation.v", 96, 150); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("pixel_generation.v", 112, 167); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("pixel_generation.v", 64, 146); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("pixel_generation.v", 232, 143); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 287, 141); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 291, 166); // bP (w, cs)
+// Elapsed time: 37 seconds
+selectCodeEditor("pixel_generation.v", 208, 145); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (g, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cs)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-954] Importing D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/top.dcp file to utils Fileset. 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 8 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Feb  8 08:50:39 2023] Launched synth_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log [Wed Feb  8 08:50:39 2023] Launched impl_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Synthesis Failed: addNotify
+// Elapsed time: 23 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+// Elapsed time: 66 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing 'reps/FPGA-Health-Monitor/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp', please type 'read_checkpoint -help' for usage info.. ]", 1, false); // ah (J, cs)
+selectCheckBox(PAResourceItoN.MsgView_STATUS_MESSAGES, (String) null, true); // g (aR, cs): TRUE
+// Elapsed time: 187 seconds
+selectCodeEditor("pixel_generation.v", 219, 205); // bP (w, cs)
+// Elapsed time: 39 seconds
+selectCodeEditor("pixel_generation.v", 279, 184); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 268, 157); // bP (w, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cs): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bz (cs):  Save Constraints : addNotify
+// A (cs): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 7 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Feb  8 08:56:23 2023] Launched synth_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log [Wed Feb  8 08:56:23 2023] Launched impl_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Failed: addNotify
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cs)
+// Tcl Command: 'rdi::info_commands {re*}'
+// Tcl Command: 'rdi::info_commands {read*}'
+// Tcl Command: 'rdi::info_commands {read_*}'
+// Tcl Command: 'rdi::info_commands {read_c*}'
+// Tcl Command: 'rdi::info_commands {read_checkpoint*}'
+// Elapsed time: 11 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "read_checkpoint-help", true); // aF (ac, cs)
+// Tcl Command: 'read_checkpoint-help'
+// Tcl Command: 'read_checkpoint-help'
+// Tcl Message: read_checkpoint-help 
+// Tcl Message: invalid command name "read_checkpoint-help" 
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cs)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cs)
+// Tcl Command: 'rdi::info_commands {read_checkpoint*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "read_checkpoint", true); // aF (ac, cs)
+// Tcl Command: 'read_checkpoint'
+// Tcl Command: 'read_checkpoint'
+// Tcl Message: read_checkpoint 
+// Tcl Message: Command: read_checkpoint 
+// Tcl Message: ERROR: [Common 17-161] Invalid option value '' specified for '-file'. 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "read_checkpoint c", true); // aF (ac, cs)
+// Tcl Command: 'read_checkpoint c'
+// Tcl Command: 'read_checkpoint c'
+// Tcl Message: read_checkpoint c 
+// Tcl Message: Command: read_checkpoint c 
+// Tcl Message: ERROR: [Common 17-69] Command failed: File 'D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/c' does not exist 
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cs)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cs)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "read_checkpoint top.dcp", true); // aF (ac, cs)
+// Tcl Command: 'read_checkpoint top.dcp'
+// Tcl Command: 'read_checkpoint top.dcp'
+// Tcl Message: read_checkpoint top.dcp 
+// Tcl Message: Command: read_checkpoint top.dcp 
+// Tcl Message: ERROR: [Common 17-69] Command failed: File 'D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/top.dcp' does not exist 
+// [GUI Memory]: 148 MB (+2316kb) [00:17:52]
+// Elapsed time: 219 seconds
+selectCodeEditor("pixel_generation.v", 217, 163); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (g, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (cs)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 11 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bz (cs):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Feb  8 09:01:47 2023] Launched synth_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log [Wed Feb  8 09:01:47 2023] Launched impl_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 84 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing 'reps/FPGA-Health-Monitor/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp', please type 'read_checkpoint -help' for usage info.. ]", 5, false); // ah (J, cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing 'reps/FPGA-Health-Monitor/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp', please type 'read_checkpoint -help' for usage info.. ]", 5, false); // ah (J, cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-161] Invalid option value '' specified for '-file'.. ]", 2, false); // ah (J, cs)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing 'reps/FPGA-Health-Monitor/fpga_paper.srcs/utils_1/imports/synth_1/top.dcp', please type 'read_checkpoint -help' for usage info.. ]", 5, false); // ah (J, cs)
+// Elapsed time: 197 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_level.v)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top_level.v)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Feb  8 09:07:01 2023] Launched synth_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pixel_generation.v", 1); // m (l, cs)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Failed: addNotify
+// Elapsed time: 115 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+// Elapsed time: 19 seconds
+selectCodeEditor("pixel_generation.v", 40, 96); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 13, 66); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.v", 2); // m (l, cs)
+// Elapsed time: 30 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cs)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 927, 117); // dT (ae, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 78 MB. Current time: 2/8/23, 9:10:06 AM PKT
+// Elapsed time: 19 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 925, 105); // dT (ae, cs)
+// Elapsed time: 86 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 894, 127); // dT (ae, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 69 MB. Current time: 2/8/23, 9:40:09 AM PKT
+// Elapsed time: 1935 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pixel_generation.v", 1); // m (l, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): No Implementation Results Available: addNotify
+dismissDialog("No Implementation Results Available"); // A (cs)
+selectCodeEditor("pixel_generation.v", 203, 191); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 347, 226); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (g, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): No Implementation Results Available: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cs)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Feb  8 09:44:24 2023] Launched synth_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log [Wed Feb  8 09:44:24 2023] Launched impl_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Synthesis Failed: addNotify
+// Elapsed time: 20 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+selectCodeEditor("pixel_generation.v", 88, 111); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 165, 96); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("pixel_generation.v", 375, 177); // bP (w, cs)
+selectCodeEditor("pixel_generation.v", 286, 151); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (g, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 3 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bz (cs):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Feb  8 09:45:28 2023] Launched synth_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log [Wed Feb  8 09:45:29 2023] Launched impl_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Synthesis Failed: addNotify
+// Elapsed time: 47 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+// Elapsed time: 39 seconds
+selectCodeEditor("pixel_generation.v", 346, 177); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (g, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// bz (cs):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed Feb  8 09:47:04 2023] Launched synth_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log [Wed Feb  8 09:47:04 2023] Launched impl_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+selectCodeEditor("pixel_generation.v", 272, 215); // bP (w, cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Synthesis Failed: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+// Elapsed time: 20 seconds
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (g, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bz (cs):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Feb  8 09:48:36 2023] Launched synth_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log [Wed Feb  8 09:48:36 2023] Launched impl_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 37 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rom1 (mainpage.hex.v)]", 2, false); // B (F, cs)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cs): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cs)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mainpage.hex.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/mainpage.hex.v}} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rom2 (lastpage.hex.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, selection (selection.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rom2 (lastpage.hex.v)]", 2, false); // B (F, cs)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cs): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cs)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lastpage.hex.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.srcs/sources_1/new/lastpage.hex.v}} 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bz (cs):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Wed Feb  8 09:49:58 2023] Launched synth_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/synth_1/runme.log [Wed Feb  8 09:49:58 2023] Launched impl_1... Run output will be captured here: D:/OneDrive - Habib University/GitHub reps/FPGA-Health-Monitor/fpga_paper.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Synthesis Failed: addNotify
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag (cs)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3848 ms. Increasing delay to 5000 ms.
+// Elapsed time: 260 seconds
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // E (g, cs)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // E (g, cs)
+// Elapsed time: 45 seconds
+selectCodeEditor("pixel_generation.v", 401, 230); // bP (w, cs)
+typeControlKey((HResource) null, "pixel_generation.v", 'c'); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 70 MB. Current time: 2/8/23, 10:10:12 AM PKT
